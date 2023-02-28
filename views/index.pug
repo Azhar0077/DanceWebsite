@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Alain Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+         ul
+             div#logo
+                 img(src="/static/img/logo.png")
+                 | ADA 
+             li #[a(href="/") Home ]
+             li #[a(href="/") About]
+             li #[a(href="/") Services]
+             li #[a(href="/") Class Info]
+             li #[a(href="/") Contact Us]
+    
+    section#introSection 
+        div Welcome to alain Dance Academy 
+        div.small Live Learn Dance
+
+    section#missionSection  
+        h2 Our Mission
+        div.card
+           h3 Dance Perfection
+           div.card-box
+               div.card-img
+                   img(src="/static/img/5.png")
+               div.card-content   
+                   p This is a Best Dance Academy of the World
+        div.card
+           h3 Dance the way you like 
+           div.card-box
+               div.card-img
+                   img(src="/static/img/6.png")
+               div.card-content   
+                   p This is a Best Dance Academy of the World
+        div.card
+           h3 Expert Teaching 
+           div.card-box
+               div.card-img
+                   img(src="/static/img/7.png")
+               div.card-content   
+                   p This is a Best Dance Academy of the World
+
+    section#sponsorsSection     
+        h2 Our Sponsors 
+        div#sponsors
+            img(src="/static/img/1.png", alt="sponsor Image", class="spImage")
+            img(src="/static/img/2.png", alt="sponsor Image", class="spImage")
+            img(src="/static/img/3.png", alt="sponsor Image", class="spImage")
+            img(src="/static/img/4.png", alt="sponsor Image", class="spImage")
+
+    footer#footer 
+        | copyright © 2023 AlainDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
